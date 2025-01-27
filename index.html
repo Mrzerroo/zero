@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZERO STORE - Hosting Game</title>
+  <link rel="icon" href="https://h.top4top.io/p_33143fn2h0.jpg" type="image/x-icon">
+  <style>
+    /* Umum */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    /* Header */
+    header {
+      background: url('https://h.top4top.io/p_33143fn2h0.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    /* Section Kontak */
+    section {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Paket Hosting */
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .package {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .package:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+    }
+
+    .package h3 {
+      font-size: 1.5rem;
+      color: #1e90ff;
+      margin-bottom: 15px;
+    }
+
+    .package p {
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+
+    .package .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #00c853;
+      margin-top: 15px;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      background: #1e90ff;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .buy-btn:hover {
+      background: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background: #1e1e1e;
+      color: #bbb;
+      text-align: center;
+      padding: 15px 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+  	
+    <h1 id="main-title">ZERO STORE</h1>
+    <p><p>
+    	
+  </header>
+
+  <section>
+    <div class="contact">
+      <h2>Kontak Kami</h2>
+      <p>✉️ Email: <a href="mailto:support@zerohosting.biz.id">support@zerohosting.biz.id</a></p>
+      <p>📱 WhatsApp: <a href="https://s.id/zerowhatsapp" target="_blank">Chat via WhatsApp</a></p>
+      <p>📡 Telegram: <a href="https://s.id/zerotelegram" target="_blank">Chat via Telegram</a></p>
+    </div>
+
+    <h2 style="text-align: center; margin-bottom: 20px;">Paket Hosting</h2>
+    <div class="packages">
+      <!-- Paket Starter -->
+      <div class="package">
+        <h3>🟦 Paket Starter</h3>
+        <p>💾 RAM: 1 GB</p>
+        <p>⚙️ CPU: 1 Core</p>
+        <p>📦 Storage: 10 GB SSD</p>
+        <p>🌐 Jaringan: 250 Mbps</p>
+        <p class="price">💲 Rp 2.000</p>
+        <a class="buy-btn" href="https://wa.me/6285136525093?text=Halo+ZERO+STORE,+saya+mau+pesan+Paket+Starter">Beli Sekarang</a>
+      </div>
+
+      <!-- Paket Premium -->
+      <div class="package">
+        <h3>🟥 Paket Premium</h3>
+        <p>💾 RAM: 10 GB</p>
+        <p>⚙️ CPU: 4 Core</p>
+        <p>📦 Storage: 50 GB SSD</p>
+        <p>🌐 Jaringan: 1 Gbps</p>
+        <p class="price">💲 Rp 20.000</p>
+        <a class="buy-btn" href="https://wa.me/6285136525093?text=Halo+ZERO+STORE,+saya+mau+pesan+Paket+Premium">Beli Sekarang</a>
+      </div>
+
+      <!-- Paket Bisnis -->
+      <div class="package">
+        <h3>🟩 Paket Bisnis</h3>
+        <p>💾 RAM: 16 GB</p>
+        <p>⚙️ CPU: 6 Core</p>
+        <p>📦 Storage: 100 GB SSD</p>
+        <p>🌐 Jaringan: 1.5 Gbps</p>
+        <p class="price">💲 Rp 35.000</p>
+        <a class="buy-btn" href="https://wa.me/6285136525093?text=Halo+ZERO+STORE,+saya+mau+pesan+Paket+Bisnis">Beli Sekarang</a>
+      </div>
+
+      <!-- Paket Ultra -->
+      <div class="package">
+        <h3>🟪 Paket Ultra</h3>
+        <p>💾 RAM: 32 GB</p>
+        <p>⚙️ CPU: 8 Core</p>
+        <p>📦 Storage: 200 GB SSD</p>
+        <p>🌐 Jaringan: 2 Gbps</p>
+        <p class="price">💲 Rp 50.000</p>
+        <a class="buy-btn" href="https://wa.me/6285136525093?text=Halo+ZERO+STORE,+saya+mau+pesan+Paket+Ultra">Beli Sekarang</a>
+      </div>
+
+      <!-- Paket Enterprise -->
+      <div class="package">
+        <h3>🟨 Paket Enterprise</h3>
+        <p>💾 RAM: 64 GB</p>
+        <p>⚙️ CPU: 12 Core</p>
+        <p>📦 Storage: 500 GB SSD</p>
+        <p>🌐 Jaringan: 10 Gbps</p>
+        <p class="price">💲 Rp 100.000</p>
+        <a class="buy-btn" href="https://wa.me/6285136525093?text=Halo+ZERO+STORE,+saya+mau+pesan+Paket+Enterprise">Beli Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>©2024-2025 <a href="https://wa.me/6285136525093" target="_blank">ZERO STORE - Hosting Game</a></p>
+  </footer>
+  
+<script>
+</script>
+</body>
+</html>
